@@ -1,0 +1,90 @@
+"""Render the terminal-style profile information card."""
+
+from __future__ import annotations
+
+import argparse
+import html
+from pathlib import Path
+
+
+PROFILE_LINES = (
+    ("Name", "Shukla A."),
+    ("Role", "Actuary · AI builder"),
+    ("Focus", "Actuarial · Digital transformation · AI"),
+    ("Domains", "Actuarial · Solvency II · Audit"),
+    ("Stack", "Python · RAG · Streamlit · Excel"),
+    ("Now", "Excel Audit Agent"),
+    ("Method", "Human-governed by design"),
+)
+
+
+class InfoCardError(ValueError):
+    """Raised when card content cannot be rendered."""
+
+
+def render_info_card(
+    destination: Path,
+    *,
+    lines: tuple[tuple[str, str], ...] = PROFILE_LINES,
+    animated: bool = True,
+) -> None:
+    if not lines:
+        raise InfoCardError("at least one profile line is required")
+    if any(not key.strip() or not value.strip() for key, value in lines):
+        raise InfoCardError("profile keys and values must not be blank")
+
+    rendered: list[str] = []
+    for index, (key, value) in enumerate(lines):
+        y = 104 + index * 43
+        css_class = "line" if animated else "line static"
+        rendered.append(
+            f'<g class="{css_class}" style="animation-delay:{0.18 + index * 0.12:.2f}s">'
+            f'<text x="34" y="{y}" class="key">{html.escape(key)}</text>'
+            f'<text x="148" y="{y}" class="value">{html.escape(value)}</text>'
+            "</g>"
+        )
+
+    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="510" height="500" viewBox="0 0 510 500" role="img" aria-labelledby="title desc">
+  <title id="title">Profile summary for Shukla A.</title>
+  <desc id="desc">A terminal information card describing Shukla A.'s role, focus, domains, tools, and current project.</desc>
+  <style>
+    text {{ font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }}
+    .prompt {{ fill: #7ee787; font-size: 16px; font-weight: 600; }}
+    .subtle {{ fill: #8b949e; font-size: 12px; }}
+    .key {{ fill: #7ee787; font-size: 14px; font-weight: 600; }}
+    .value {{ fill: #c9d1d9; font-size: 14px; }}
+    .line {{ opacity: 0; transform: translateX(-8px); animation: reveal .35s ease-out forwards; }}
+    .line.static {{ opacity: 1; transform: none; animation: none; }}
+    @keyframes reveal {{ to {{ opacity: 1; transform: translateX(0); }} }}
+    @media (prefers-reduced-motion: reduce) {{
+      .line {{ opacity: 1; transform: none; animation: none; }}
+    }}
+  </style>
+  <rect x="1" y="1" width="508" height="498" rx="14" fill="#0d1117" stroke="#30363d" stroke-width="2"/>
+  <circle cx="20" cy="21" r="5" fill="#ff5f56"/>
+  <circle cx="38" cy="21" r="5" fill="#ffbd2e"/>
+  <circle cx="56" cy="21" r="5" fill="#27c93f"/>
+  <text x="255" y="25" text-anchor="middle" class="subtle">shukla@github: ~</text>
+  <text x="28" y="65" class="prompt">$ whoami --verbose</text>
+  {''.join(rendered)}
+  <line x1="28" y1="421" x2="482" y2="421" stroke="#21262d"/>
+  <text x="28" y="456" class="subtle">evidence first · humans in control</text>
+  <rect x="357" y="444" width="8" height="16" fill="#7ee787">
+    <animate attributeName="opacity" values="1;0;1" dur="1.1s" repeatCount="3" fill="freeze"/>
+  </rect>
+</svg>
+'''
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    destination.write_text(svg, encoding="utf-8")
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--output", type=Path, default=Path("assets/info-card.svg"))
+    parser.add_argument("--static", action="store_true")
+    args = parser.parse_args()
+    render_info_card(args.output, animated=not args.static)
+
+
+if __name__ == "__main__":
+    main()

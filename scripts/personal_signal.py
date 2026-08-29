@@ -13,7 +13,7 @@ DEFAULT_LINES: tuple[tuple[str, str], ...] = (
     ("hello", "French actuary by training"),
     ("mode", "build + analyse"),
     ("now", "AI tooling for insurers"),
-    ("play", "FIP ↔ Claude FM"),
+    ("play", "FIP radio · click below"),
 )
 
 DEFAULT_WAVEFORM: tuple[float, ...] = (
@@ -110,7 +110,7 @@ def render_personal_signal(
 
     svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="900" height="330" viewBox="0 0 900 330" role="img" aria-labelledby="title desc">
   <title id="title">Meet Shukla A.</title>
-  <desc id="desc">Playful round glasses frame the initials S and A while actuarial, coding, AI, and music symbols float nearby. A terminal introduces a French actuary who likes to build, analyse, and listen to FIP and Claude FM.</desc>
+  <desc id="desc">Playful round glasses frame the initials S and A while actuarial, coding, AI, and music symbols float nearby. A terminal introduces a French actuary who likes to build, analyse, and listen to FIP radio.</desc>
   <defs>
     <radialGradient id="lens-blue" cx="35%" cy="30%">
       <stop offset="0" stop-color="#58a6ff" stop-opacity="0.24"/>

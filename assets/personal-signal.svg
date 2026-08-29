@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="330" viewBox="0 0 900 330" role="img" aria-labelledby="title desc">
   <title id="title">Meet Shukla A.</title>
-  <desc id="desc">Playful round glasses frame the initials S and A while actuarial, coding, AI, and music symbols float nearby. A terminal introduces a French actuary who likes to build, analyse, and listen to FIP and Claude FM.</desc>
+  <desc id="desc">Playful round glasses frame the initials S and A while actuarial, coding, AI, and music symbols float nearby. A terminal introduces a French actuary who likes to build, analyse, and listen to FIP radio.</desc>
   <defs>
     <radialGradient id="lens-blue" cx="35%" cy="30%">
       <stop offset="0" stop-color="#58a6ff" stop-opacity="0.24"/>
@@ -66,7 +66,7 @@
   </g>
   <text x="220" y="265" text-anchor="middle" class="subtle">FRENCH ACTUARY · BUILDER · ANALYST</text>
   <text x="430" y="61" fill="#7ee787" font-size="15">$ ./about_me --play<tspan class="cursor">_</tspan></text>
-  <g class="story-line" style="animation-delay:0.75s"><text x="430" y="102" class="line-label">hello</text><text x="505" y="102" class="line-value">French actuary by training</text></g><g class="story-line" style="animation-delay:1.03s"><text x="430" y="144" class="line-label">mode</text><text x="505" y="144" class="line-value">build + analyse</text></g><g class="story-line" style="animation-delay:1.31s"><text x="430" y="186" class="line-label">now</text><text x="505" y="186" class="line-value">AI tooling for insurers</text></g><g class="story-line" style="animation-delay:1.59s"><text x="430" y="228" class="line-label">play</text><text x="505" y="228" class="line-value">FIP ↔ Claude FM</text></g>
+  <g class="story-line" style="animation-delay:0.75s"><text x="430" y="102" class="line-label">hello</text><text x="505" y="102" class="line-value">French actuary by training</text></g><g class="story-line" style="animation-delay:1.03s"><text x="430" y="144" class="line-label">mode</text><text x="505" y="144" class="line-value">build + analyse</text></g><g class="story-line" style="animation-delay:1.31s"><text x="430" y="186" class="line-label">now</text><text x="505" y="186" class="line-value">AI tooling for insurers</text></g><g class="story-line" style="animation-delay:1.59s"><text x="430" y="228" class="line-label">play</text><text x="505" y="228" class="line-value">FIP radio · click below</text></g>
   <rect x="505" y="252" width="92" height="24" rx="12" fill="#161b22" stroke="#58a6ff"/>
   <text x="551" y="268" text-anchor="middle" fill="#58a6ff" font-size="10">savings</text>
   <rect x="607" y="252" width="104" height="24" rx="12" fill="#161b22" stroke="#ff7ab2"/>

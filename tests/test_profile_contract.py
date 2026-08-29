@@ -10,14 +10,14 @@ def test_readme_uses_only_repository_owned_artwork_and_real_project_links() -> N
     assert "./assets/info-card.svg" in readme
     assert "./assets/contribution-graph.svg" in readme
     assert "./assets/personal-signal.svg" in readme
+    assert "./assets/fip-radio.svg" in readme
     assert "./assets/actuarial-signal.svg" not in readme
     assert "https://github.com/ISHUKLA/SolvaIIRAG" in readme
     assert "https://github.com/ISHUKLA/BACI-climate-index" in readme
     assert "https://github.com/ISHUKLA/ai-job-search" in readme
-    assert "CHIC — My Forbidden Lover" in readme
-    assert "https://www.youtube.com/watch?v=zyCuvFuNRYo" in readme
     assert "https://www.radiofrance.fr/fip" in readme
-    assert "https://www.youtube.com/watch?v=tRsQsTMvPNg" in readme
+    assert "CHIC" not in readme
+    assert "Claude FM" not in readme
     assert "French actuary by training" in readme
     assert "I like to build and analyse" in readme
     assert "AI tooling for insurers" in readme
@@ -25,6 +25,14 @@ def test_readme_uses_only_repository_owned_artwork_and_real_project_links() -> N
     assert "savings and retirement lines" in readme
     assert "Excel Audit Agent" not in readme
     assert "github-readme-stats" not in readme
+
+
+def test_fip_radio_button_is_accessible_and_motion_safe() -> None:
+    button = (ROOT / "assets/fip-radio.svg").read_text(encoding="utf-8")
+    assert "Open FIP Radio" in button
+    assert "FIP RADIO" in button
+    assert "ON / OFF" in button
+    assert "prefers-reduced-motion" in button
 
 
 def test_workflow_has_narrow_write_permission_and_no_token() -> None:

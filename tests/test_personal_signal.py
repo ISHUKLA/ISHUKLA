@@ -14,7 +14,8 @@ def test_clean_profile_generates_accessible_personal_animation(tmp_path: Path) -
     assert "French actuary by training" in svg
     assert "build + analyse" in svg
     assert "AI tooling for insurers" in svg
-    assert "FIP ↔ Claude FM" in svg
+    assert "FIP radio · click below" in svg
+    assert "Claude FM" not in svg
     assert "French tricolour" in svg
     assert "Σ" in svg
     assert "♫" in svg

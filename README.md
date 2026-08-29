@@ -54,14 +54,15 @@ useful software > impressive demos
 `Python` · `Excel` · `Streamlit` · `RAG` · `LLM workflows` · `Data analysis` ·
 `Actuarial modelling` · `Solvency II` · `Climate risk`
 
-## What I listen to when I build
+## Radio while I build
 
-🎵 **Current soundtrack:** [CHIC — My Forbidden Lover](https://www.youtube.com/watch?v=zyCuvFuNRYo)
-
-When I am building, I like listening to:
-
-- [FIP — Radio France](https://www.radiofrance.fr/fip)
-- [Claude FM](https://www.youtube.com/watch?v=tRsQsTMvPNg)
+<div align="center">
+  <a href="https://www.radiofrance.fr/fip">
+    <img src="./assets/fip-radio.svg" width="430" alt="Open FIP Radio and use its play or pause control" />
+  </a>
+  <br>
+  <sub>Click to open FIP, then use the live player's play/pause control.</sub>
+</div>
 
 ---
 

@@ -11,9 +11,11 @@ def test_info_card_clean_content_generates_accessible_svg(tmp_path: Path) -> Non
 
     svg = output.read_text(encoding="utf-8")
     assert "Profile summary for Shukla A." in svg
-    assert "Actuary · AI builder" in svg
-    assert "Actuarial · Digital transformation · AI" in svg
-    assert "Human-governed by design" in svg
+    assert "French actuary by training" in svg
+    assert "Build · Analyse" in svg
+    assert "AI tooling for insurers" in svg
+    assert "Judgement-led strategic work" in svg
+    assert "Savings · Retirement" in svg
     assert "prefers-reduced-motion" in svg
 
 

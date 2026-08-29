@@ -17,15 +17,14 @@
 
 </div>
 
-## What I build
+## About me
 
-I am an **actuary by training** who builds practical AI and data tools for
-actuarial, financial, and audit workflows. I care about systems that make their
-evidence visible, preserve human judgment, and state their limitations plainly.
+I am a **French actuary by training**. I like to build and analyse.
 
-Currently building an **Excel Audit Agent** that independently reconstructs
-spreadsheet calculations, surfaces anomalies, reconciles figures, and routes
-every consequential decision through a named human reviewer.
+**Now** — I am building AI tooling for insurers.
+
+**Interests** — Judgement-related strategic insurance work, particularly across
+savings and retirement lines.
 
 ## Selected work
 
@@ -59,5 +58,5 @@ When I am building, I like listening to:
 ---
 
 <div align="center">
-  <sub>Interested in actuarial technology, trustworthy AI, and financial controls.</sub>
+  <sub>Interested in judgement-led insurance strategy, savings, retirement, and applied AI.</sub>
 </div>

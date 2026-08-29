@@ -14,6 +14,12 @@ def test_readme_uses_only_repository_owned_artwork_and_real_project_links() -> N
     assert "https://github.com/ISHUKLA/ai-job-search" in readme
     assert "https://www.radiofrance.fr/fip" in readme
     assert "https://www.youtube.com/watch?v=tRsQsTMvPNg" in readme
+    assert "French actuary by training" in readme
+    assert "I like to build and analyse" in readme
+    assert "AI tooling for insurers" in readme
+    assert "Judgement-related strategic insurance work" in readme
+    assert "savings and retirement lines" in readme
+    assert "Excel Audit Agent" not in readme
     assert "github-readme-stats" not in readme
 
 

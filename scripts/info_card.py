@@ -9,12 +9,12 @@ from pathlib import Path
 
 PROFILE_LINES = (
     ("Name", "Shukla A."),
-    ("Role", "Actuary · AI builder"),
-    ("Focus", "Actuarial · Digital transformation · AI"),
-    ("Domains", "Actuarial · Solvency II · Audit"),
+    ("Role", "French actuary by training"),
+    ("Craft", "Build · Analyse"),
+    ("Now", "AI tooling for insurers"),
+    ("Interest", "Judgement-led strategic work"),
+    ("Lines", "Savings · Retirement"),
     ("Stack", "Python · RAG · Streamlit · Excel"),
-    ("Now", "Excel Audit Agent"),
-    ("Method", "Human-governed by design"),
 )
 
 
@@ -68,7 +68,7 @@ def render_info_card(
   <text x="28" y="65" class="prompt">$ whoami --verbose</text>
   {''.join(rendered)}
   <line x1="28" y1="421" x2="482" y2="421" stroke="#21262d"/>
-  <text x="28" y="456" class="subtle">evidence first · humans in control</text>
+  <text x="28" y="456" class="subtle">build · analyse · apply judgement</text>
   <rect x="357" y="444" width="8" height="16" fill="#7ee787">
     <animate attributeName="opacity" values="1;0;1" dur="1.1s" repeatCount="3" fill="freeze"/>
   </rect>

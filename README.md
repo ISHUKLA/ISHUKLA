@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/personal-signal.svg" width="900" alt="Shukla A. — French actuary, builder and analyst focused on insurance strategy and AI tooling" />
+<img src="./assets/actuarial-signature.svg" width="900" alt="Shukla A. — French actuary, builder and analyst focused on insurance strategy and AI tooling" />
 
 <br><br>
 
@@ -56,7 +56,7 @@ useful software > impressive demos
 
 <div align="center">
   <a href="https://www.radiofrance.fr/fip">
-    <img src="./assets/fip-radio.svg" width="430" alt="Open FIP Radio and use its play or pause control" />
+    <img src="./assets/fip-listening.svg" width="430" alt="Open FIP Radio and use its play or pause control" />
   </a>
   <br>
   <sub>Click to open FIP, then use the live player's play/pause control.</sub>

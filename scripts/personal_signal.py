@@ -173,7 +173,7 @@ def render_personal_signal(
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--output", type=Path, default=Path("assets/personal-signal.svg"))
+    parser.add_argument("--output", type=Path, default=Path("assets/actuarial-signature.svg"))
     parser.add_argument("--static", action="store_true")
     args = parser.parse_args()
     render_personal_signal(args.output, animated=not args.static)

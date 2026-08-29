@@ -9,8 +9,10 @@ def test_readme_uses_only_repository_owned_artwork_and_real_project_links() -> N
     assert "./assets/portrait.svg" in readme
     assert "./assets/info-card.svg" in readme
     assert "./assets/contribution-graph.svg" in readme
-    assert "./assets/personal-signal.svg" in readme
-    assert "./assets/fip-radio.svg" in readme
+    assert "./assets/actuarial-signature.svg" in readme
+    assert "./assets/fip-listening.svg" in readme
+    assert "./assets/personal-signal.svg" not in readme
+    assert "./assets/fip-radio.svg" not in readme
     assert "./assets/actuarial-signal.svg" not in readme
     assert "https://github.com/ISHUKLA/SolvaIIRAG" in readme
     assert "https://github.com/ISHUKLA/BACI-climate-index" in readme
@@ -28,7 +30,7 @@ def test_readme_uses_only_repository_owned_artwork_and_real_project_links() -> N
 
 
 def test_fip_radio_button_is_accessible_and_motion_safe() -> None:
-    button = (ROOT / "assets/fip-radio.svg").read_text(encoding="utf-8")
+    button = (ROOT / "assets/fip-listening.svg").read_text(encoding="utf-8")
     assert "Open FIP Radio" in button
     assert "FIP RADIO" in button
     assert "Listen while I build" in button

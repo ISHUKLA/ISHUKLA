@@ -1,5 +1,11 @@
 <div align="center">
 
+### <code>shukla@github:~$ ./about_me --play</code>
+
+<img src="./assets/personal-signal.svg" width="900" alt="Playful animated introduction to Shukla A., a French actuary who likes building, analysing, AI and music" />
+
+<br><br>
+
 ### <code>shukla@github:~$ ./activity.sh</code>
 
 <img src="./assets/contribution-graph.svg" width="900" alt="Shukla A.'s GitHub contribution activity over the last year" />
@@ -14,12 +20,6 @@
     <td valign="top"><img src="./assets/info-card.svg" width="510" alt="Profile summary for Shukla A." /></td>
   </tr>
 </table>
-
-<br><br>
-
-### <code>shukla@github:~$ ./scenario_engine</code>
-
-<img src="./assets/actuarial-signal.svg" width="900" alt="Illustrative actuarial savings and retirement scenarios flowing from data and assumptions to human judgement" />
 
 </div>
 

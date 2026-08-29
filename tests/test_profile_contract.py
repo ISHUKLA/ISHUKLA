@@ -9,6 +9,7 @@ def test_readme_uses_only_repository_owned_artwork_and_real_project_links() -> N
     assert "./assets/portrait.svg" in readme
     assert "./assets/info-card.svg" in readme
     assert "./assets/contribution-graph.svg" in readme
+    assert "./assets/actuarial-signal.svg" in readme
     assert "https://github.com/ISHUKLA/SolvaIIRAG" in readme
     assert "https://github.com/ISHUKLA/BACI-climate-index" in readme
     assert "https://github.com/ISHUKLA/ai-job-search" in readme

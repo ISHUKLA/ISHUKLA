@@ -15,6 +15,12 @@
   </tr>
 </table>
 
+<br><br>
+
+### <code>shukla@github:~$ ./scenario_engine</code>
+
+<img src="./assets/actuarial-signal.svg" width="900" alt="Illustrative actuarial savings and retirement scenarios flowing from data and assumptions to human judgement" />
+
 </div>
 
 ## About me

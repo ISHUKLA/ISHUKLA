@@ -14,6 +14,8 @@ def test_readme_uses_only_repository_owned_artwork_and_real_project_links() -> N
     assert "https://github.com/ISHUKLA/SolvaIIRAG" in readme
     assert "https://github.com/ISHUKLA/BACI-climate-index" in readme
     assert "https://github.com/ISHUKLA/ai-job-search" in readme
+    assert "CHIC — My Forbidden Lover" in readme
+    assert "https://www.youtube.com/watch?v=zyCuvFuNRYo" in readme
     assert "https://www.radiofrance.fr/fip" in readme
     assert "https://www.youtube.com/watch?v=tRsQsTMvPNg" in readme
     assert "French actuary by training" in readme

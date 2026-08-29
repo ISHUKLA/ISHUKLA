@@ -56,6 +56,8 @@ useful software > impressive demos
 
 ## What I listen to when I build
 
+🎵 **Current soundtrack:** [CHIC — My Forbidden Lover](https://www.youtube.com/watch?v=zyCuvFuNRYo)
+
 When I am building, I like listening to:
 
 - [FIP — Radio France](https://www.radiofrance.fr/fip)

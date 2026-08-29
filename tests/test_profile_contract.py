@@ -25,3 +25,5 @@ def test_workflow_has_narrow_write_permission_and_no_token() -> None:
     assert "personal access token" not in workflow.lower()
     assert "stefanzweifel" not in workflow
     assert 'git config user.name "github-actions[bot]"' in workflow
+    assert "uses: actions/checkout@v7" in workflow
+    assert "uses: actions/setup-python@v7" in workflow

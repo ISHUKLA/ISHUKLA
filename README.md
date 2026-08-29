@@ -1,18 +1,16 @@
 <div align="center">
 
-### <code>shukla@github:~$ ./about_me --play</code>
-
-<img src="./assets/personal-signal.svg" width="900" alt="Playful animated introduction to Shukla A., a French actuary who likes building, analysing, AI and music" />
+<img src="./assets/personal-signal.svg" width="900" alt="Shukla A. — French actuary, builder and analyst focused on insurance strategy and AI tooling" />
 
 <br><br>
 
-### <code>shukla@github:~$ ./activity.sh</code>
+### Building in public
 
 <img src="./assets/contribution-graph.svg" width="900" alt="Shukla A.'s GitHub contribution activity over the last year" />
 
 <br><br>
 
-### <code>shukla@github:~$ whoami</code>
+### The person behind the work
 
 <table>
   <tr>

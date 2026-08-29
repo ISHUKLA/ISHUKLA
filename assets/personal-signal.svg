@@ -1,76 +1,63 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="330" viewBox="0 0 900 330" role="img" aria-labelledby="title desc">
-  <title id="title">Meet Shukla A.</title>
-  <desc id="desc">Playful round glasses frame the initials S and A while actuarial, coding, AI, and music symbols float nearby. A terminal introduces a French actuary who likes to build, analyse, and listen to FIP radio.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300" role="img" aria-labelledby="title desc">
+  <title id="title">Shukla A. — Actuary, Builder, Analyst</title>
+  <desc id="desc">Shukla A. is a French actuary by training, builder, and analyst. An elegant actuarial projection accompanies his focus on judgement-led insurance strategy, savings, retirement, and AI tooling for insurers.</desc>
   <defs>
-    <radialGradient id="lens-blue" cx="35%" cy="30%">
-      <stop offset="0" stop-color="#58a6ff" stop-opacity="0.24"/>
-      <stop offset="1" stop-color="#0d1117" stop-opacity="0.4"/>
-    </radialGradient>
-    <radialGradient id="lens-pink" cx="35%" cy="30%">
-      <stop offset="0" stop-color="#ff7ab2" stop-opacity="0.22"/>
-      <stop offset="1" stop-color="#0d1117" stop-opacity="0.4"/>
-    </radialGradient>
-    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
-      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.34"/>
-      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111c2c"/>
+      <stop offset="1" stop-color="#09111d"/>
+    </linearGradient>
+    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c9a96e" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#c9a96e" stop-opacity="0"/>
     </linearGradient>
   </defs>
   <style>
-    text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
-    .subtle { fill: #8b949e; font-size: 11px; }
-    .glasses { opacity: 0; transform-origin: 220px 155px; animation: glasses-in .85s cubic-bezier(.17,.9,.28,1.25) forwards; }
-    .initial { fill: #f0f6fc; font-size: 48px; font-weight: 700; }
-    .badge { animation: float 3.6s ease-in-out infinite; }
-    .badge text { font-size: 14px; font-weight: 700; }
-    .story-line { opacity: 0; clip-path: inset(0 100% 0 0); animation: type-line .72s cubic-bezier(.2,.8,.2,1) forwards; }
-    .line-label { fill: #ff7ab2; font-size: 12px; font-weight: 700; }
-    .line-value { fill: #c9d1d9; font-size: 15px; }
-    .cursor { animation: blink .9s steps(1) infinite; }
-    .eq-bar { transform-box: fill-box; transform-origin: center bottom; animation: beat 1.15s ease-in-out infinite alternate; }
-    .shine { opacity: 0; animation: lens-shine 1.1s .6s ease-in-out forwards; }
-    .static { opacity: 1 !important; transform: none !important; clip-path: none !important; animation: none !important; }
-    @keyframes glasses-in { 0% { opacity: 0; transform: translateY(18px) rotate(-6deg) scale(.88); } 100% { opacity: 1; transform: none; } }
-    @keyframes float { 0%,100% { transform: translateY(0) rotate(-3deg); } 50% { transform: translateY(-8px) rotate(3deg); } }
-    @keyframes type-line { 1% { opacity: 1; } 100% { opacity: 1; clip-path: inset(0 0 0 0); } }
-    @keyframes blink { 50% { opacity: 0; } }
-    @keyframes beat { 0% { transform: scaleY(.35); opacity: .55; } 100% { transform: scaleY(1); opacity: 1; } }
-    @keyframes lens-shine { 0% { opacity: 0; transform: translateX(-70px); } 35% { opacity: .7; } 100% { opacity: 0; transform: translateX(115px); } }
+    text { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .eyebrow { fill: #c9a96e; font-size: 10px; font-weight: 650; letter-spacing: 2.4px; }
+    .name { fill: #f1f3f5; font-family: Georgia, "Times New Roman", serif; font-size: 35px; letter-spacing: .4px; }
+    .role { fill: #d7dde5; font-family: Georgia, "Times New Roman", serif; font-size: 23px; }
+    .subtle { fill: #8390a3; font-size: 11px; letter-spacing: .5px; }
+    .label { fill: #c9a96e; font-size: 9px; font-weight: 700; letter-spacing: 1.5px; }
+    .value { fill: #d7dde5; font-size: 14px; }
+    .trace { fill: none; stroke: #d7b574; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; path-length: 1; stroke-dasharray: 1; stroke-dashoffset: 1; animation: draw 2.1s .25s cubic-bezier(.2,.75,.2,1) forwards; }
+    .area { opacity: 0; animation: reveal .9s 1.1s ease-out forwards; }
+    .point { fill: #d7b574; stroke: #111c2c; stroke-width: 2; opacity: 0; animation: reveal .3s ease-out forwards; }
+    .story { opacity: 0; transform: translateY(4px); animation: settle .55s ease-out forwards; }
+    .rule { stroke-dasharray: 1; stroke-dashoffset: 1; animation: draw 1.2s .15s ease-out forwards; }
+    .static { opacity: 1 !important; transform: none !important; stroke-dashoffset: 0 !important; animation: none !important; }
+    @keyframes draw { to { stroke-dashoffset: 0; } }
+    @keyframes reveal { to { opacity: 1; } }
+    @keyframes settle { to { opacity: 1; transform: none; } }
     @media (prefers-reduced-motion: reduce) {
-      .glasses, .badge, .story-line, .cursor, .eq-bar, .shine { opacity: 1; transform: none; clip-path: none; animation: none; }
-      .shine { display: none; }
+      .trace, .area, .point, .story, .rule { opacity: 1; transform: none; stroke-dashoffset: 0; animation: none; }
     }
   </style>
-  <rect x="1" y="1" width="898" height="328" rx="14" fill="#0d1117" stroke="#30363d" stroke-width="2"/>
-  <circle cx="20" cy="21" r="5" fill="#ff5f56"/>
-  <circle cx="38" cy="21" r="5" fill="#ffbd2e"/>
-  <circle cx="56" cy="21" r="5" fill="#27c93f"/>
-  <text x="450" y="25" text-anchor="middle" class="subtle">shukla@github: ~ /about_me --play</text>
 
-  <g transform="translate(82 76)"><g class="badge" style="animation-delay:0s"><circle r="23" fill="#161b22" stroke="#58a6ff" stroke-width="1.5"/><text text-anchor="middle" y="5" fill="#58a6ff">Σ</text></g></g><g transform="translate(356 84)"><g class="badge" style="animation-delay:-.8s"><circle r="23" fill="#161b22" stroke="#ff7ab2" stroke-width="1.5"/><text text-anchor="middle" y="5" fill="#ff7ab2">{ }</text></g></g><g transform="translate(76 235)"><g class="badge" style="animation-delay:-1.6s"><circle r="23" fill="#161b22" stroke="#d29922" stroke-width="1.5"/><text text-anchor="middle" y="5" fill="#d29922">♫</text></g></g><g transform="translate(362 225)"><g class="badge" style="animation-delay:-2.4s"><circle r="23" fill="#161b22" stroke="#7ee787" stroke-width="1.5"/><text text-anchor="middle" y="5" fill="#7ee787">AI</text></g></g>
-  <g class="glasses">
-    <path d="M 85 140 Q 62 128 48 134" fill="none" stroke="#8b949e" stroke-width="5" stroke-linecap="round"/>
-    <path d="M 355 140 Q 378 128 392 134" fill="none" stroke="#8b949e" stroke-width="5" stroke-linecap="round"/>
-    <circle cx="150" cy="155" r="66" fill="url(#lens-blue)" stroke="#58a6ff" stroke-width="5"/>
-    <circle cx="290" cy="155" r="66" fill="url(#lens-pink)" stroke="#ff7ab2" stroke-width="5"/>
-    <path d="M 216 151 Q 220 140 224 151" fill="none" stroke="#c9d1d9" stroke-width="5" stroke-linecap="round"/>
-    <text x="150" y="172" text-anchor="middle" class="initial">S</text>
-    <text x="290" y="172" text-anchor="middle" class="initial">A</text>
-    <path class="shine" d="M 104 116 L 137 92 L 192 192 L 165 211 Z" fill="url(#shine)"/>
-    <path class="shine" d="M 244 116 L 277 92 L 332 192 L 305 211 Z" fill="url(#shine)"/>
+  <rect x="1" y="1" width="898" height="298" rx="10" fill="url(#panel)" stroke="#26354a" stroke-width="2"/>
+  <path class="rule" pathLength="1" d="M28 24 H872" stroke="#c9a96e" stroke-width="1" opacity=".55"/>
+
+  <g aria-label="Actuarial long-term projection">
+    <text x="65" y="57" class="eyebrow">LONG-TERM VIEW</text>
+    <text x="405" y="57" text-anchor="end" class="subtle">SAVINGS · RETIREMENT</text>
+    <path d="M65 87 H405 M65 138 H405 M65 190 H405 M65 241 H405" stroke="#314056" stroke-width="1" opacity=".68"/>
+    <path d="M65 87 V241 M178 87 V241 M291 87 V241 M405 87 V241" stroke="#26354a" stroke-width="1" opacity=".7"/>
+    <path class="area" d="M 65.0 229.6 L 95.9 224.0 L 126.8 216.9 L 157.7 208.3 L 188.6 198.4 L 219.5 187.0 L 250.5 174.3 L 281.4 160.1 L 312.3 144.4 L 343.2 128.8 L 374.1 113.2 L 405.0 99.0 L 405.0 241.0 L 65.0 241.0 Z" fill="url(#area)"/>
+    <path class="trace" pathLength="1" d="M 65.0 229.6 L 95.9 224.0 L 126.8 216.9 L 157.7 208.3 L 188.6 198.4 L 219.5 187.0 L 250.5 174.3 L 281.4 160.1 L 312.3 144.4 L 343.2 128.8 L 374.1 113.2 L 405.0 99.0"/>
+    <circle class="point" cx="65.0" cy="229.6" r="3" style="animation-delay:1.15s"/><circle class="point" cx="157.7" cy="208.3" r="3" style="animation-delay:1.36s"/><circle class="point" cx="250.5" cy="174.3" r="3" style="animation-delay:1.57s"/><circle class="point" cx="343.2" cy="128.8" r="3" style="animation-delay:1.78s"/><circle class="point" cx="405.0" cy="99.0" r="3" style="animation-delay:1.92s"/>
+    <text x="65" y="267" class="subtle">TODAY</text>
+    <text x="405" y="267" text-anchor="end" class="subtle">HORIZON</text>
+    <text x="235" y="286" text-anchor="middle" class="subtle">projection · evidence · human judgement</text>
   </g>
-  <g aria-label="French tricolour">
-    <rect x="184" y="238" width="24" height="6" rx="3" fill="#0055a4"/>
-    <rect x="208" y="238" width="24" height="6" fill="#f0f6fc"/>
-    <rect x="232" y="238" width="24" height="6" rx="3" fill="#ef4135"/>
+
+  <path d="M455 50 V264" stroke="#26354a" stroke-width="1"/>
+  <g aria-label="French tricolour" transform="translate(500 49)">
+    <rect width="26" height="3" rx="1.5" fill="#315fa4"/>
+    <rect x="26" width="26" height="3" fill="#e8ebef"/>
+    <rect x="52" width="26" height="3" rx="1.5" fill="#a84f58"/>
   </g>
-  <text x="220" y="265" text-anchor="middle" class="subtle">FRENCH ACTUARY · BUILDER · ANALYST</text>
-  <text x="430" y="61" fill="#7ee787" font-size="15">$ ./about_me --play<tspan class="cursor">_</tspan></text>
-  <g class="story-line" style="animation-delay:0.75s"><text x="430" y="102" class="line-label">hello</text><text x="505" y="102" class="line-value">French actuary by training</text></g><g class="story-line" style="animation-delay:1.03s"><text x="430" y="144" class="line-label">mode</text><text x="505" y="144" class="line-value">build + analyse</text></g><g class="story-line" style="animation-delay:1.31s"><text x="430" y="186" class="line-label">now</text><text x="505" y="186" class="line-value">AI tooling for insurers</text></g><g class="story-line" style="animation-delay:1.59s"><text x="430" y="228" class="line-label">play</text><text x="505" y="228" class="line-value">FIP radio · click below</text></g>
-  <rect x="505" y="252" width="92" height="24" rx="12" fill="#161b22" stroke="#58a6ff"/>
-  <text x="551" y="268" text-anchor="middle" fill="#58a6ff" font-size="10">savings</text>
-  <rect x="607" y="252" width="104" height="24" rx="12" fill="#161b22" stroke="#ff7ab2"/>
-  <text x="659" y="268" text-anchor="middle" fill="#ff7ab2" font-size="10">retirement</text>
-  <text x="850" y="268" text-anchor="end" class="subtle">soundtrack_to_build</text>
-  <rect class="eq-bar" x="434.50" y="293.28" width="8" height="12.72" rx="4" fill="#58a6ff" style="animation-delay:0.00s"/><rect class="eq-bar" x="447.50" y="287.52" width="8" height="18.48" rx="4" fill="#ff7ab2" style="animation-delay:-0.11s"/><rect class="eq-bar" x="460.50" y="282.24" width="8" height="23.76" rx="4" fill="#7ee787" style="animation-delay:-0.22s"/><rect class="eq-bar" x="473.50" y="289.68" width="8" height="16.32" rx="4" fill="#d29922" style="animation-delay:-0.33s"/><rect class="eq-bar" x="486.50" y="278.88" width="8" height="27.12" rx="4" fill="#58a6ff" style="animation-delay:-0.44s"/><rect class="eq-bar" x="499.50" y="285.12" width="8" height="20.88" rx="4" fill="#ff7ab2" style="animation-delay:-0.55s"/><rect class="eq-bar" x="512.50" y="291.84" width="8" height="14.16" rx="4" fill="#7ee787" style="animation-delay:-0.66s"/><rect class="eq-bar" x="525.50" y="283.92" width="8" height="22.08" rx="4" fill="#d29922" style="animation-delay:-0.77s"/><rect class="eq-bar" x="538.50" y="278.16" width="8" height="27.84" rx="4" fill="#58a6ff" style="animation-delay:-0.88s"/><rect class="eq-bar" x="551.50" y="288.48" width="8" height="17.52" rx="4" fill="#ff7ab2" style="animation-delay:0.00s"/><rect class="eq-bar" x="564.50" y="282.72" width="8" height="23.28" rx="4" fill="#7ee787" style="animation-delay:-0.11s"/><rect class="eq-bar" x="577.50" y="290.64" width="8" height="15.36" rx="4" fill="#d29922" style="animation-delay:-0.22s"/><rect class="eq-bar" x="590.50" y="280.56" width="8" height="25.44" rx="4" fill="#58a6ff" style="animation-delay:-0.33s"/><rect class="eq-bar" x="603.50" y="286.08" width="8" height="19.92" rx="4" fill="#ff7ab2" style="animation-delay:-0.44s"/><rect class="eq-bar" x="616.50" y="276.96" width="8" height="29.04" rx="4" fill="#7ee787" style="animation-delay:-0.55s"/><rect class="eq-bar" x="629.50" y="287.76" width="8" height="18.24" rx="4" fill="#d29922" style="animation-delay:-0.66s"/><rect class="eq-bar" x="642.50" y="283.44" width="8" height="22.56" rx="4" fill="#58a6ff" style="animation-delay:-0.77s"/><rect class="eq-bar" x="655.50" y="291.36" width="8" height="14.64" rx="4" fill="#ff7ab2" style="animation-delay:-0.88s"/><rect class="eq-bar" x="668.50" y="281.04" width="8" height="24.96" rx="4" fill="#7ee787" style="animation-delay:0.00s"/><rect class="eq-bar" x="681.50" y="286.32" width="8" height="19.68" rx="4" fill="#d29922" style="animation-delay:-0.11s"/><rect class="eq-bar" x="694.50" y="279.36" width="8" height="26.64" rx="4" fill="#58a6ff" style="animation-delay:-0.22s"/><rect class="eq-bar" x="707.50" y="289.20" width="8" height="16.80" rx="4" fill="#ff7ab2" style="animation-delay:-0.33s"/><rect class="eq-bar" x="720.50" y="284.40" width="8" height="21.60" rx="4" fill="#7ee787" style="animation-delay:-0.44s"/><rect class="eq-bar" x="733.50" y="277.68" width="8" height="28.32" rx="4" fill="#d29922" style="animation-delay:-0.55s"/><rect class="eq-bar" x="746.50" y="287.04" width="8" height="18.96" rx="4" fill="#58a6ff" style="animation-delay:-0.66s"/><rect class="eq-bar" x="759.50" y="281.76" width="8" height="24.24" rx="4" fill="#ff7ab2" style="animation-delay:-0.77s"/><rect class="eq-bar" x="772.50" y="290.16" width="8" height="15.84" rx="4" fill="#7ee787" style="animation-delay:-0.88s"/><rect class="eq-bar" x="785.50" y="279.84" width="8" height="26.16" rx="4" fill="#d29922" style="animation-delay:0.00s"/><rect class="eq-bar" x="798.50" y="285.36" width="8" height="20.64" rx="4" fill="#58a6ff" style="animation-delay:-0.11s"/><rect class="eq-bar" x="811.50" y="292.08" width="8" height="13.92" rx="4" fill="#ff7ab2" style="animation-delay:-0.22s"/><rect class="eq-bar" x="824.50" y="282.96" width="8" height="23.04" rx="4" fill="#7ee787" style="animation-delay:-0.33s"/><rect class="eq-bar" x="837.50" y="288.24" width="8" height="17.76" rx="4" fill="#d29922" style="animation-delay:-0.44s"/>
+  <text x="500" y="94" class="name">Shukla A.</text>
+  <text x="500" y="127" class="role">Actuary · Builder · Analyst</text>
+  <text x="500" y="150" class="subtle">FRENCH ACTUARY BY TRAINING</text>
+  <path d="M500 163 H846" stroke="#314056" stroke-width="1"/>
+  <g class="story" style="animation-delay:0.65s"><text x="500" y="184" class="label">BUILDING</text><text x="612" y="184" class="value">AI tooling for insurers</text></g><g class="story" style="animation-delay:0.81s"><text x="500" y="218" class="label">INTEREST</text><text x="612" y="218" class="value">judgement-led strategy</text></g><g class="story" style="animation-delay:0.97s"><text x="500" y="252" class="label">FOCUS</text><text x="612" y="252" class="value">savings + retirement</text></g>
 </svg>

@@ -31,8 +31,8 @@ def test_fip_radio_button_is_accessible_and_motion_safe() -> None:
     button = (ROOT / "assets/fip-radio.svg").read_text(encoding="utf-8")
     assert "Open FIP Radio" in button
     assert "FIP RADIO" in button
-    assert "ON / OFF" in button
-    assert "prefers-reduced-motion" in button
+    assert "Listen while I build" in button
+    assert "@keyframes" not in button
 
 
 def test_workflow_has_narrow_write_permission_and_no_token() -> None:

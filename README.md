@@ -42,15 +42,14 @@ savings and retirement lines.
 
 ```text
 human review > automatic certainty
-traceable evidence > opaque answers
-explicit limitations > confident theatre
-useful software > impressive demos
+traceable evidence > transparent answers
+explicit limitations > useful software > clear POCs
 ```
 
 ## Toolbox
 
 `Python` · `Excel` · `Streamlit` · `RAG` · `LLM workflows` · `Data analysis` ·
-`Actuarial modelling` · `Solvency II` · `Climate risk`
+`Actuarial modelling` · `Insurance` · `Climate risk`
 
 ## Radio while I build
 

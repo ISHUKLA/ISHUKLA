@@ -1,44 +1,9 @@
 {
   "schema_version": 1,
   "username": "ISHUKLA",
-  "observed_through": "2026-08-29",
+  "observed_through": "2026-08-30",
   "source": "https://github.com/users/ISHUKLA/contributions",
   "days": [
-    {
-      "date": "2025-08-24",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-08-25",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-08-26",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-08-27",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-08-28",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-08-29",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-08-30",
-      "count": 0,
-      "level": 0
-    },
     {
       "date": "2025-08-31",
       "count": 0,
@@ -1856,7 +1821,12 @@
     },
     {
       "date": "2026-08-29",
-      "count": 2,
+      "count": 10,
+      "level": 4
+    },
+    {
+      "date": "2026-08-30",
+      "count": 1,
       "level": 1
     }
   ]

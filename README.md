@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/actuarial-signature.svg" width="900" alt="Shukla A. — French actuary, builder and analyst focused on insurance strategy and AI tooling" />
+<img src="./assets/actuarial-signature.svg" width="900" alt="Shukla A. — Actuary, builder and analyst focused on insurance strategy and AI tooling" />
 
 <br><br>
 
@@ -25,7 +25,7 @@
 
 I am a **French actuary by training**. I like to build and analyse.
 
-**Now** — I am building AI tooling for insurers.
+**Now** — Building AI tooling for insurers.
 
 **Interests** — Judgement-related strategic insurance work, particularly across
 savings and retirement lines.
@@ -49,7 +49,7 @@ explicit limitations > useful software > clear POCs
 ## Toolbox
 
 `Python` · `Excel` · `Streamlit` · `RAG` · `LLM workflows` · `Data analysis` ·
-`Actuarial modelling` · `Insurance` · `Climate risk`
+`Actuarial modelling` · `Insurance` · `Climate risk` · `Claude Code`
 
 ## Radio while I build
 

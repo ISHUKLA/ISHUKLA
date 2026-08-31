@@ -52,16 +52,24 @@ explicit limitations > useful software > clear POCs
 `Actuarial modelling` · `Insurance` · `Climate risk` · `Claude Code`
 
 ## What I listen to when I build
-
 <div align="center">
   <a href="https://www.radiofrance.fr/fip">
     <img src="./assets/fip-listening.svg" width="430" alt="Open FIP Radio and use its play or pause control" />
   </a>
   <br>
   <sub>Click to open FIP, then use the live player's play/pause control.</sub>
+  <br><br>
+  <a href="https://www.youtube.com/watch?v=tRsQsTMvPNg">
+    <strong>🎧 Listen to Claude FM</strong>
+  </a>
+  <br>
+  <sub>Click to open Claude FM on YouTube.</sub>
 </div>
 
 ---
+
+
+
 
 <div align="center">
   <sub>Interested in judgement-led insurance strategy, savings, retirement, and applied AI.</sub>

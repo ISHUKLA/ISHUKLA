@@ -51,7 +51,7 @@ explicit limitations > useful software > clear POCs
 `Python` · `Excel` · `Streamlit` · `RAG` · `LLM workflows` · `Data analysis` ·
 `Actuarial modelling` · `Insurance` · `Climate risk` · `Claude Code`
 
-## Radio while I build
+## What I listen to when I build
 
 <div align="center">
   <a href="https://www.radiofrance.fr/fip">

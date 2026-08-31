@@ -23,7 +23,7 @@
 
 ## About me
 
-I am a **French actuary by training**. I like to build and analyse.
+**French actuary by training**. I like to build and analyse.
 
 **Now** — Building AI tooling for insurers.
 

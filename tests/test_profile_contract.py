@@ -10,7 +10,6 @@ def test_readme_uses_only_repository_owned_artwork_and_real_project_links() -> N
     assert "./assets/info-card.svg" in readme
     assert "./assets/contribution-graph.svg" in readme
     assert "./assets/actuarial-signature.svg" in readme
-    assert "./assets/based-between.svg" in readme
     assert "./assets/professional-impact.svg" in readme
     assert "./assets/fip-listening.svg" in readme
     assert "./assets/personal-signal.svg" not in readme
@@ -54,15 +53,6 @@ def test_professional_impact_artwork_makes_evidence_immediately_visible() -> Non
     assert "127 Solvency II questions" in artwork
     assert "CFO × CRO" in artwork
     assert "4 gates" in artwork
-    assert "@keyframes" not in artwork
-
-
-def test_location_artwork_states_the_three_places_accessibly() -> None:
-    artwork = (ROOT / "assets/based-between.svg").read_text(encoding="utf-8")
-    assert "<title" in artwork
-    assert "<desc" in artwork
-    assert "Based between Charleroi, Paris and India" in artwork
-    assert "I move between Charleroi, Paris and India." in artwork
     assert "@keyframes" not in artwork
 
 

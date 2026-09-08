@@ -30,6 +30,12 @@
 **Interests** — Judgement-related strategic insurance work, particularly across
 savings and retirement lines.
 
+<div align="center">
+
+<img src="./assets/based-between.svg" width="640" alt="Based between Charleroi, Paris, and India" />
+
+</div>
+
 ## Professional impact
 
 <div align="center">

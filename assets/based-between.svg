@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="170" viewBox="0 0 640 170" role="img" aria-labelledby="title desc">
+  <title id="title">Based between Charleroi, Paris and India</title>
+  <desc id="desc">A small globe and connected route representing Shukla A. moving between Charleroi in Belgium, Paris in France, and India.</desc>
+  <defs>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111c2c"/>
+      <stop offset="1" stop-color="#09111d"/>
+    </linearGradient>
+    <clipPath id="globe-clip">
+      <circle cx="91" cy="85" r="53"/>
+    </clipPath>
+  </defs>
+  <style>
+    text { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .serif { font-family: Georgia, "Times New Roman", serif; }
+    .eyebrow { fill: #c9a96e; font-size: 9px; font-weight: 700; letter-spacing: 2px; }
+    .place { fill: #f1f3f5; font-size: 24px; }
+    .copy { fill: #9aa6b7; font-size: 11px; }
+    .city { fill: #d7dde5; font-size: 10px; font-weight: 650; }
+  </style>
+
+  <rect x="1" y="1" width="638" height="168" rx="10" fill="url(#panel)" stroke="#2b3c53" stroke-width="2"/>
+  <path d="M22 21 H618" stroke="#c9a96e" stroke-width="1" opacity=".45"/>
+
+  <g aria-label="Globe with a route from Western Europe to India">
+    <circle cx="91" cy="85" r="53" fill="#101f31" stroke="#52647c" stroke-width="1.5"/>
+    <g clip-path="url(#globe-clip)" fill="none" stroke="#354963" stroke-width="1">
+      <ellipse cx="91" cy="85" rx="24" ry="53"/>
+      <ellipse cx="91" cy="85" rx="43" ry="53"/>
+      <path d="M38 67 H144 M38 103 H144"/>
+      <ellipse cx="91" cy="85" rx="53" ry="22"/>
+    </g>
+    <path d="M69 68 C78 55 88 56 95 66 C104 77 118 76 128 65" fill="none" stroke="#c9a96e" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="69" cy="68" r="4" fill="#315fa4" stroke="#111c2c" stroke-width="2"/>
+    <circle cx="77" cy="61" r="4" fill="#e8ebef" stroke="#111c2c" stroke-width="2"/>
+    <circle cx="128" cy="65" r="4" fill="#a84f58" stroke="#111c2c" stroke-width="2"/>
+    <circle cx="91" cy="85" r="53" fill="none" stroke="#61728a" stroke-width="1.5"/>
+  </g>
+
+  <path d="M164 43 V129" stroke="#2b3c53"/>
+  <g aria-label="Location statement">
+    <text x="190" y="52" class="eyebrow">BASED BETWEEN</text>
+    <text x="190" y="84" class="place serif">Charleroi · Paris · India</text>
+    <text x="190" y="105" class="copy">I move between Charleroi, Paris and India.</text>
+
+    <g transform="translate(190 126)">
+      <circle cx="3" cy="3" r="3" fill="#315fa4"/>
+      <text x="13" y="6" class="city">CHARLEROI</text>
+      <circle cx="113" cy="3" r="3" fill="#e8ebef" stroke="#6c788a"/>
+      <text x="123" y="6" class="city">PARIS</text>
+      <circle cx="196" cy="3" r="3" fill="#a84f58"/>
+      <text x="206" y="6" class="city">INDIA</text>
+    </g>
+  </g>
+</svg>

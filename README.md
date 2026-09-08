@@ -32,6 +32,12 @@ savings and retirement lines.
 
 ## Professional impact
 
+<div align="center">
+
+<img src="./assets/professional-impact.svg" width="900" alt="Professional impact at a glance: €1bn+ mathematical reserves, 50+ practising actuaries using SolvaIIRAG, 89% Hit@4 across 127 questions, CFO–CRO alignment, and four human-review gates" />
+
+</div>
+
 > ### Insurance transformation grounded in actuarial practice
 >
 > I combine actuarial judgement, financial control, stakeholder alignment, and

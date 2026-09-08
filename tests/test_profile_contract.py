@@ -10,6 +10,7 @@ def test_readme_uses_only_repository_owned_artwork_and_real_project_links() -> N
     assert "./assets/info-card.svg" in readme
     assert "./assets/contribution-graph.svg" in readme
     assert "./assets/actuarial-signature.svg" in readme
+    assert "./assets/professional-impact.svg" in readme
     assert "./assets/fip-listening.svg" in readme
     assert "./assets/personal-signal.svg" not in readme
     assert "./assets/fip-radio.svg" not in readme
@@ -40,6 +41,19 @@ def test_professional_impact_is_specific_and_evidence_led() -> None:
     assert "modelled estimate, not a" in readme
     assert "production benchmark" in readme
     assert "https://www.linkedin.com/in/shuklaisaaca/" in readme
+
+
+def test_professional_impact_artwork_makes_evidence_immediately_visible() -> None:
+    artwork = (ROOT / "assets/professional-impact.svg").read_text(encoding="utf-8")
+    assert "<title" in artwork
+    assert "<desc" in artwork
+    assert "€1bn+" in artwork
+    assert "50+" in artwork
+    assert "89%" in artwork
+    assert "127 Solvency II questions" in artwork
+    assert "CFO × CRO" in artwork
+    assert "4 gates" in artwork
+    assert "@keyframes" not in artwork
 
 
 def test_fip_radio_button_is_accessible_and_motion_safe() -> None:
